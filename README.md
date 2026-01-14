@@ -10,6 +10,8 @@ This dotfiles setup features:
 - **Kitty** - GPU-accelerated terminal emulator
 - **Matugen** - Automatic Material You color theming
 - **Spicetify** - Customized Spotify client
+- **Swaync** - Notification center
+- **Spotifyd/Spotify-player** - Spotify daemon & terminal client
 - And more!
 
 ## ✨ Features
@@ -19,6 +21,36 @@ This dotfiles setup features:
 - 🎵 **Spicetify theming** - Spotify matches your system colors
 - 💻 **Fully configured apps** - Terminal, bar, launcher, and more
 - 🚀 **One-command installation** - Easy setup script included
+
+## ❓ What are Dotfiles?
+
+Dotfiles are configuration files for Unix-like systems that begin with a dot (.) to hide them. They store your personal settings, preferences, and customizations for applications and the system.
+
+### What's typically included in dotfiles:
+
+**Shell & Terminal:**
+- Shell configs (.zshrc, .bashrc)
+- Terminal emulator configs (kitty, alacritty)
+- CLI tools (fastfetch, neofetch, htop)
+
+**Window Manager:**
+- Hyprland/i3/sway configs
+- Waybar panels
+- Application launchers (rofi)
+- Window rules and keybinds
+
+**Applications:**
+- Text editors (vim, nvim, vscode)
+- Music players (spotify, mpd)
+- Notifications (swaync, dunst)
+- Theming (gtk, qt)
+
+**Automation:**
+- Custom scripts
+- systemd services
+- Auto-start applications
+
+This repository contains a curated selection of essential configs for a complete Hyprland setup.
 
 ## 📋 Requirements
 
@@ -30,13 +62,19 @@ This dotfiles setup features:
 
 ```bash
 # Window Manager & Compositor
-sudo pacman -S hyprland waybar swww matugen
+sudo pacman -S hyprland waybar swww matugen wireplumber
 
 # Terminal & Apps
 sudo pacman -S kitty rofi wlogout cava fastfetch
 
+# Audio & Notifications
+sudo pacman -S spotifyd spotify-player
+
 # Theming & Customization
-sudo pacman -S spicetify
+sudo pacman -S spicetify fcitx5 fcitx5-im fcitx5-gtk
+
+# Utilities
+sudo pacman -S zsh git
 ```
 
 ### Optional (AUR packages)
@@ -46,7 +84,7 @@ sudo pacman -S --needed base-devel git
 git clone https://aur.archlinux.org/yay.git
 cd yay && makepkg -si
 
-# Install AUR packages
+# Install AUR packages (optional)
 yay -S hyprpaper matugen-git spicetify-cli
 ```
 
@@ -76,18 +114,28 @@ yay -S hyprpaper matugen-git spicetify-cli
 ```
 dotfiles/
 ├── config/
-│   ├── hypr/          # Hyprland configuration
-│   ├── waybar/        # Waybar bar configuration
-│   ├── kitty/         # Kitty terminal config
-│   ├── rofi/          # Rofi launcher config
-│   ├── spicetify/     # Spotify theming
-│   ├── swww/          # Wallpaper daemon config
-│   ├── matugen/       # Color theming config
-│   └── wlogout/       # Logout menu config
-├── scripts/           # Custom scripts
-├── docs/              # Documentation
-├── install.sh         # Installation script
-└── README.md          # This file
+│   ├── hypr/            # Hyprland configuration
+│   ├── waybar/          # Waybar bar configuration
+│   ├── kitty/           # Kitty terminal config
+│   ├── rofi/            # Rofi launcher config
+│   ├── spicetify/       # Spotify theming
+│   ├── swww/            # Wallpaper daemon config
+│   ├── matugen/         # Color theming config
+│   ├── swaync/          # Notification center config
+│   ├── wireplumber/     # PipeWire audio config
+│   ├── wlogout/         # Logout menu config
+│   ├── spotifyd/        # Spotify daemon config
+│   ├── spotify-player/   # Terminal Spotify client
+│   ├── fcitx5/         # Input method config
+│   ├── cava.conf        # Audio visualizer config
+│   ├── fastfetch.jsonc  # System info config
+│   ├── zshrc            # Zsh shell config
+│   └── gtkrc-2.0        # GTK2 config
+├── scripts/             # Custom scripts
+├── docs/                # Documentation
+├── install.sh           # Installation script
+├── README.md            # This file
+└── LICENSE              # MIT License
 ```
 
 ## 🎨 Customization
@@ -154,6 +202,65 @@ Located in `~/.config/spicetify/`
 - Custom theme
 - Color theming
 - Extensions
+
+### Spicetify
+Located in `~/.config/spicetify/`
+- Custom theme
+- Color theming
+- Extensions
+
+### Spotify (Spotifyd/Spotify-player)
+Located in `~/.config/spotifyd/` and `~/.config/spotify-player/`
+- Spotify daemon for background playback
+- Terminal-based Spotify client
+- Note: Requires credentials (see setup below)
+
+### Swaync
+Located in `~/.config/swaync/`
+- Notification center
+- Control center
+- Theme integration
+
+## 🎵 Spotify Setup
+
+### Spotifyd Setup
+1. Copy the example config:
+   ```bash
+   cp ~/.config/spotifyd/spotifyd.conf.example ~/.config/spotifyd/spotifyd.conf
+   ```
+
+2. Edit with your Spotify credentials:
+   ```bash
+   nano ~/.config/spotifyd/spotifyd.conf
+   ```
+   - Use your Spotify email and password
+   - Or generate a device password at https://www.spotify.com/account/set-device-password/
+
+3. Enable and start the service:
+   ```bash
+   systemctl --user enable --now spotifyd
+   ```
+
+### Spotify-player Setup
+1. Get Spotify developer credentials:
+   - Go to https://developer.spotify.com/dashboard
+   - Create a new application
+   - Set Redirect URI to: `http://127.0.0.1:8888/callback`
+
+2. Copy the example config:
+   ```bash
+   cp ~/.config/spotify-player/app.toml.example ~/.config/spotify-player/app.toml
+   ```
+
+3. Edit with your developer credentials:
+   ```bash
+   nano ~/.config/spotify-player/app.toml
+   ```
+
+4. Run spotify-player:
+   ```bash
+   spotify-player
+   ```
 
 ## 🔧 Scripts
 

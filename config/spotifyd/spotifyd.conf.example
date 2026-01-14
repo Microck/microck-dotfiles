@@ -1,0 +1,15 @@
+[global]
+# Spotify username
+username = "your_spotify_username"
+
+# Spotify password or device password
+password = "your_spotify_password"
+
+# Use PulseAudio backend (works through PipeWire compatibility)
+backend = "pulseaudio"
+
+# Device name
+device_name = "pipewire"
+
+# Audio bitrate: 96, 160, 320
+bitrate = 320
