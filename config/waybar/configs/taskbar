@@ -1,0 +1,64 @@
+{
+  "include": [
+    "$HOME/.config/waybar/Modules",
+    "$HOME/.config/waybar/ModulesCustom",
+    "$HOME/.config/waybar/ModulesGroups",
+    "$HOME/.config/waybar/ModulesWorkspaces"
+  ],
+
+  "layer": "bottom",
+  "mode": "dock",
+  "exclusive": true,
+  "passthrough": false,
+  "position": "top",
+  "spacing": 3,
+  "fixed-center": true,
+  "ipc": true,
+  "margin-top": 0,
+  "margin-left": 0,
+  "margin-right": 0,
+
+  "modules-left": [
+    "idle_inhibitor",
+    "custom/separator#blank",
+    "tray",
+    "custom/separator#line",
+    "custom/separator#blank",
+    "hyprland/workspaces#alpha"
+  ],
+
+  "modules-center": ["clock"],
+
+  "modules-right": [
+    "mpris",
+    "group/notify",
+    "custom/separator#dot-line",
+    "battery",
+    "custom/separator#blank",
+    "group/audio",
+    "custom/separator#dot-line",
+    "custom/power"
+  ],
+
+  "group/audio": {
+    "orientation": "horizontal",
+    "modules": ["wireplumber#slider"]
+  },
+
+  "wireplumber#slider": {
+    "format": "{icon} {volume}%",
+    "format-muted": " {volume}%",
+    "format-icons": ["", "", ""],
+    "tooltip": true,
+    "scroll-step": 5,
+    "on-click": "~/.config/hypr/scripts/volume_safe.sh toggle",
+    "on-scroll-up": "~/.config/hypr/scripts/volume_safe.sh up",
+    "on-scroll-down": "~/.config/hypr/scripts/volume_safe.sh down",
+    "slider": true
+  },
+
+  "custom/power": {
+    "format": "⏻",
+    "on-click": "~/.config/hypr/scripts/Wlogout.sh"
+  }
+}

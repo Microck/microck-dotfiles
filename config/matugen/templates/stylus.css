@@ -1,0 +1,8 @@
+:root {
+  --md-sys-color-primary: {{colors.primary}};
+  --md-sys-color-on-primary: {{colors.on_primary}};
+  --md-sys-color-surface: {{colors.surface}};
+  --md-sys-color-on-surface: {{colors.on_surface}};
+  --md-sys-color-background: {{colors.background}};
+  --md-sys-color-on-background: {{colors.on_background}};
+}

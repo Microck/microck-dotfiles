@@ -1,0 +1,46 @@
+# Archives
+*.tar.gz
+*.zip
+*.7z
+
+# Backups
+*-backup-*
+*_backup_*
+
+# Cache
+*cache*
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs
+*.log
+
+# Temporary files
+*~
+*.bak
+*.swp
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Credentials
+*.creds
+*credentials*
+*secrets*
+*.env
+
+# Personal data
+Pictures/
+Downloads/
+Videos/
+Documents/
+Music/
