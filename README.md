@@ -23,7 +23,7 @@ restart hyprland to apply.
 
 **packages**
 - core: `hyprland`, `waybar`, `swww`, `matugen`, `wireplumber`
-- apps: `kitty`, `rofi`, `wlogout`, `cava`, `fastfetch`
+- apps: `kitty`, `rofi`, `wlogout`, `cava`, `fastfetch`, `songfetch`
 - spotify: `spotifyd`, `spotify-player`, `spicetify`
 - utils: `zsh`, `git`, `fcitx5`
 
@@ -34,8 +34,9 @@ restart hyprland to apply.
 
 - **theming**: matugen generates colors from wallpaper.
 - **wallpapers**: random on boot, or manual selection.
-- **audio**: full spotify integration (daemon + terminal client).
+- **audio**: full spotify integration (daemon + terminal client) with songfetch display.
 - **notifications**: swaync integration.
+- **music info**: songfetch displays current track with album art.
 
 ## spotify setup
 
