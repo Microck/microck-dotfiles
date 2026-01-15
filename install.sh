@@ -86,6 +86,12 @@ mkdir -p "$HOME/Pictures/Wallpapers"
 mkdir -p "$HOME/Pictures/Screenshots"
 mkdir -p "$HOME/.config/hypr"
 
+echo ""
+echo "⚠️  System configs (Ly & GRUB) located in config/system/"
+echo "    - config/system/ly/ - Login manager configuration"
+echo "    - config/system/grub/ - Bootloader configuration"
+echo "    - These require manual installation with sudo"
+
 # Set up wallpaper symlinks
 if [ -f "$HOME/Pictures/Wallpapers/$(ls ~/Pictures/Wallpapers/ 2>/dev/null | head -1)" ]; then
     first_wallpaper="$HOME/Pictures/Wallpapers/$(ls ~/Pictures/Wallpapers/ 2>/dev/null | head -1)"

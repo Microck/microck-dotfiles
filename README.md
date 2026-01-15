@@ -1,4 +1,4 @@
-# microck dotfiles
+# micr.dots
 
 hyprland setup on arch linux. uses matugen for material you colors, plus spotifyd, swaync, and fully configured apps.
 
@@ -7,8 +7,8 @@ hyprland setup on arch linux. uses matugen for material you colors, plus spotify
 clone and run the installer.
 
 ```bash
-git clone https://github.com/microck/microck-dotfiles.git
-cd microck-dotfiles
+git clone https://github.com/microck/micr.dots.git
+cd micr.dots
 chmod +x install.sh
 ./install.sh
 ```
@@ -29,6 +29,7 @@ restart hyprland to apply.
 
 **aur**
 - `hyprpaper`, `matugen-git`, `spicetify-cli`
+- `grub-minecraft-theme-git` - Pochita Minecraft GRUB theme
 
 ## features
 
@@ -75,6 +76,7 @@ restart hyprland to apply.
 
 ## structure
 
+### user configs
 configs in `~/.config/linux/`:
 
 - `hypr/`: compositor
@@ -95,6 +97,17 @@ configs in `~/.config/linux/`:
 - `cava.conf`: audio visualizer
 - `fastfetch.jsonc`: system info
 - `zshrc`: shell config
+
+### system configs
+system-level configs in `config/system/` (require manual installation):
+
+- `ly/` - login manager (Ly) configuration
+  - `config.ini` - Ly display manager settings
+  - `save.ini` - saved session data
+  - `README.md` - full documentation
+- `grub/` - bootloader (GRUB) configuration
+  - `grub-default.txt` - GRUB settings
+  - `README.md` - Pochita Minecraft theme documentation
 
 scripts in `~/.config/microck/`
 
