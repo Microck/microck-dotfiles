@@ -98,6 +98,12 @@ configs in `~/.config/`:
 - `thumbgen.sh`: generate wallpaper thumbnails (from hyprzepyx)
 - `key_hints.sh`: show keybind hints
 
+## tools
+
+- **yazi**: modern terminal file manager
+- **waypaper**: GUI wallpaper manager (run `waypaper`)
+- **songfetch**: display current song with album art
+
 ## customization
 
 **wallpapers**
