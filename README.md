@@ -223,7 +223,7 @@ license: free to use.
 
 ## credits
 
-inspired by:
+based on configs from:
 - xzepyx/hyprzepyx (animations, swaync themes, scripts)
 - elrondforwin/hyprdots (gtk themes, yazi, window rules)
 - lxtharia/minegrub-world-sel-theme (minecraft grub theme)
