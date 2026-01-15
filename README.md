@@ -135,7 +135,7 @@ scripts in `~/.config/microck/`
 - `super + return`: open terminal
 - `super + shift + return`: floating terminal
 - `super + e`: file manager (thunar)
-- `super + shift + e`: terminal file manager (yazi)
+- `super + shift + e`: terminal file manager (yazi, with transparency)
 - `super + d`: app launcher (rofi)
 - `super + f`: app launcher (duplicate)
 - `super + b`: open browser
@@ -167,6 +167,7 @@ scripts in `~/.config/microck/`
 - `super + h`: keybind hints
 - `super + w`: wallpaper selector
 - `super + shift + w`: random wallpaper
+- `super + alt + w`: waypaper GUI
 - `super + ctrl + b`: waybar styles
 - `super + alt + b`: waybar layout
 
@@ -210,6 +211,19 @@ matugen image --type scheme-vibrant ~/.config/hypr/current_wallpaper
 ```bash
 pkill waybar
 waybar
+```
+
+**keybinds not working**
+```bash
+hyprctl reload
+# or restart Hyprland session
+```
+
+**scripts not running**
+```bash
+# Make sure scripts are executable
+chmod +x ~/.config/microck/*.sh
+chmod +x ~/.config/hypr/scripts/*.sh
 ```
 
 ## backup
