@@ -5,4 +5,6 @@ always_parse_args=true
 show_all=false
 print_command=true
 insensitive=true
-prompt= Find Apps 
+prompt= Apps
+icon-theme=Papirus-Dark
+show-icons=true
