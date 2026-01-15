@@ -35,7 +35,9 @@ restart hyprland to apply.
 - **theming**: matugen generates colors from wallpaper.
 - **wallpapers**: random on boot, or manual selection.
 - **audio**: full spotify integration (daemon + terminal client) with songfetch display.
-- **notifications**: swaync integration.
+- **notifications**: swaync with custom themes.
+- **animations**: smooth hyprland animations (Nice preset from hyprzepyx).
+- **media controls**: mpris integration in waybar.
 - **music info**: songfetch displays current track with album art.
 
 ## spotify setup
