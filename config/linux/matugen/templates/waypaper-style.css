@@ -1,0 +1,60 @@
+/*
+ * Waypaper Styles
+ * Generated with Matugen
+ */
+
+<* for name, value in colors *>
+    @define-color {{name}} {{value.default.hex}};
+<* endfor *>
+
+window {
+    background-color: @surface;
+    color: @on-surface;
+    border-radius: 16px;
+    border: 1px solid @outline;
+}
+
+button {
+    background-color: @surface-container;
+    color: @on-surface;
+    border-radius: 8px;
+    border: 1px solid @outline;
+}
+
+button:hover {
+    background-color: @primary-container;
+    color: @on-primary-container;
+}
+
+entry {
+    background-color: @surface-container;
+    color: @on-surface;
+    border-radius: 8px;
+    border: 1px solid @outline;
+}
+
+entry:focus {
+    border-color: @primary;
+    box-shadow: 0 0 0 2px @primary-container;
+}
+
+flowboxchild {
+    background-color: @surface-container;
+    border-radius: 12px;
+    padding: 2px;
+}
+
+flowboxchild:selected {
+    background-color: @primary-container;
+    border: 2px solid @primary;
+}
+
+scrollbar slider {
+    background-color: @primary;
+    border-radius: 8px;
+    min-width: 6px;
+}
+
+label {
+    color: @on-surface;
+}
