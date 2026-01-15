@@ -165,9 +165,8 @@ scripts in `~/.config/microck/`
 - `super + v`: clipboard manager
 - `super + period`: emoji picker
 - `super + h`: keybind hints
-- `super + w`: wallpaper selector
+- `super + w`: wallpaper selector (waypaper GUI)
 - `super + shift + w`: random wallpaper
-- `super + alt + w`: waypaper GUI
 - `super + ctrl + b`: waybar styles
 - `super + alt + b`: waybar layout
 
