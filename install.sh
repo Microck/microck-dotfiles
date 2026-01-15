@@ -40,32 +40,34 @@ backup_config "$CONFIG_DIR/swaync"
 backup_config "$CONFIG_DIR/wireplumber"
 backup_config "$CONFIG_DIR/spotifyd"
 backup_config "$CONFIG_DIR/spotify-player"
-backup_config "$CONFIG_DIR/fcitx5"
-backup_config "$CONFIG_DIR/systemd"
+backup_config "$CONFIG_DIR/yazi"
+backup_config "$CONFIG_DIR/waypaper"
 backup_config "$HOME/.zshrc"
 
 # Copy configs
 echo "📋 Installing configs..."
-cp -r "$DOTFILES_DIR/config/hypr" "$CONFIG_DIR/"
-cp -r "$DOTFILES_DIR/config/waybar" "$CONFIG_DIR/"
-cp -r "$DOTFILES_DIR/config/kitty" "$CONFIG_DIR/"
-cp -r "$DOTFILES_DIR/config/rofi" "$CONFIG_DIR/"
-cp -r "$DOTFILES_DIR/config/spicetify" "$CONFIG_DIR/"
-cp -r "$DOTFILES_DIR/config/swww" "$CONFIG_DIR/"
-cp -r "$DOTFILES_DIR/config/matugen" "$CONFIG_DIR/"
-cp -r "$DOTFILES_DIR/config/wlogout" "$CONFIG_DIR/"
-cp -r "$DOTFILES_DIR/config/swaync" "$CONFIG_DIR/"
-cp -r "$DOTFILES_DIR/config/wireplumber" "$CONFIG_DIR/"
-cp -r "$DOTFILES_DIR/config/spotifyd" "$CONFIG_DIR/"
-cp -r "$DOTFILES_DIR/config/spotify-player" "$CONFIG_DIR/"
+cp -r "$DOTFILES_DIR/config/linux/hypr" "$CONFIG_DIR/"
+cp -r "$DOTFILES_DIR/config/linux/waybar" "$CONFIG_DIR/"
+cp -r "$DOTFILES_DIR/config/linux/kitty" "$CONFIG_DIR/"
+cp -r "$DOTFILES_DIR/config/linux/rofi" "$CONFIG_DIR/"
+cp -r "$DOTFILES_DIR/config/linux/spicetify" "$CONFIG_DIR/"
+cp -r "$DOTFILES_DIR/config/linux/swww" "$CONFIG_DIR/"
+cp -r "$DOTFILES_DIR/config/linux/matugen" "$CONFIG_DIR/"
+cp -r "$DOTFILES_DIR/config/linux/wlogout" "$CONFIG_DIR/"
+cp -r "$DOTFILES_DIR/config/linux/swaync" "$CONFIG_DIR/"
+cp -r "$DOTFILES_DIR/config/linux/wireplumber" "$CONFIG_DIR/"
+cp -r "$DOTFILES_DIR/config/linux/spotifyd" "$CONFIG_DIR/"
+cp -r "$DOTFILES_DIR/config/linux/spotify-player" "$CONFIG_DIR/"
+cp -r "$DOTFILES_DIR/config/linux/yazi" "$CONFIG_DIR/"
+cp -r "$DOTFILES_DIR/config/linux/waypaper" "$CONFIG_DIR/"
 cp -r "$DOTFILES_DIR/config/fcitx5" "$CONFIG_DIR/" 2>/dev/null || true
 
 # Copy other configs
 mkdir -p "$CONFIG_DIR/cava"
-cp "$DOTFILES_DIR/config/cava.conf" "$CONFIG_DIR/cava/config" 2>/dev/null || true
-cp "$DOTFILES_DIR/config/fastfetch.jsonc" "$CONFIG_DIR/fastfetch/config.jsonc" 2>/dev/null || true
-cp "$DOTFILES_DIR/config/zshrc" "$HOME/.zshrc" 2>/dev/null || true
-cp "$DOTFILES_DIR/config/gtkrc-2.0" "$HOME/.gtkrc-2.0" 2>/dev/null || true
+cp "$DOTFILES_DIR/config/linux/cava.conf" "$CONFIG_DIR/cava/config" 2>/dev/null || true
+cp "$DOTFILES_DIR/config/linux/fastfetch.jsonc" "$CONFIG_DIR/fastfetch/config.jsonc" 2>/dev/null || true
+cp "$DOTFILES_DIR/config/linux/zshrc" "$HOME/.zshrc" 2>/dev/null || true
+cp "$DOTFILES_DIR/config/linux/gtkrc-2.0" "$HOME/.gtkrc-2.0" 2>/dev/null || true
 
 # Install scripts
 echo "🔧 Installing scripts..."

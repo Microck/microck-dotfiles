@@ -75,18 +75,28 @@ restart hyprland to apply.
 
 ## structure
 
-configs in `~/.config/`:
+configs in `~/.config/linux/`:
 
 - `hypr/`: compositor
 - `waybar/`: status bar
 - `kitty/`: terminal
 - `rofi/`: launcher
-- `matugen/`: color generation
 - `spicetify/`: spotify client
 - `spotifyd/`: spotify daemon
 - `spotify-player/`: terminal player
 - `swaync/`: notifications
-- `scripts/`: custom scripts
+- `matugen/`: color theming
+- `swww/`: wallpaper daemon
+- `wireplumber/`: audio
+- `gtk-3.0/`: GTK3 themes
+- `gtk-4.0/`: GTK4 themes
+- `yazi/`: file manager
+- `waypaper/`: wallpaper GUI
+- `cava.conf`: audio visualizer
+- `fastfetch.jsonc`: system info
+- `zshrc`: shell config
+
+scripts in `~/.config/microck/`
 
 ## scripts
 
