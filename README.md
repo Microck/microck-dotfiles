@@ -86,6 +86,16 @@ configs in `~/.config/`:
 - `swaync/`: notifications
 - `scripts/`: custom scripts
 
+## scripts
+
+- `wallpaper_random.sh`: random wallpaper with matugen theming
+- `wallpaper_select.sh`: manual wallpaper selection
+- `wallpaper-rofi`: enhanced wallpaper picker with thumbnails (from hyprzepyx)
+- `wallpaper_effects.sh`: apply effects to wallpaper
+- `sysmaintenance.sh`: automated system cleanup (from hyprzepyx)
+- `thumbgen.sh`: generate wallpaper thumbnails (from hyprzepyx)
+- `key_hints.sh`: show keybind hints
+
 ## customization
 
 **wallpapers**
