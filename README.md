@@ -2,28 +2,6 @@
 
 hyprland setup on arch linux. uses matugen for material you colors, plus spotifyd, swaync, and fully configured apps.
 
-## Credits
-
-This dotfiles setup incorporates configurations and scripts from several excellent open-source projects:
-
-### Core Inspiration
-- **[xZepyx/hyprzepyx](https://github.com/xZepyx/hyprzepyx)** - Hyprland animations, window rules, swaync themes, and system maintenance scripts
-- **[elrondforwin/hyprdots](https://github.com/elrondforwin/hyprdots)** - GTK themes, Yazi file manager, Waypaper wallpaper manager, and enhanced window rules
-
-### Tools & Scripts
-- **[HyprZepyx Scripts](https://github.com/xZepyx/hyprzepyx/tree/main/scripts)** - `sysmaintenance.sh`, `thumbgen.sh`, `wallpaper-rofi`
-- **[Hyprdots Configs](https://github.com/elrondforwin/hyprdots/tree/main/.config)** - GTK themes, Yazi configuration, Waypaper setup
-
-### Themes & Styling
-- **[Pochita GRUB Theme](https://aur.archlinux.org/packages/grub-minecraft-theme-git)** - Minecraft singleplayer world selection screen theme for GRUB
-- **[adw-gtk3](https://github.com/lassekongo83/adw-gtk3)** - Modern GTK theme for GNOME applications
-
-### Community Resources
-- **[Hyprland Wiki](https://wiki.hyprland.org/)** - Comprehensive documentation and community examples
-- **[Arch Linux Wiki](https://wiki.archlinux.org/)** - System configuration and package management
-
-Thank you to all the contributors and maintainers of these projects!
-
 ## setup
 
 clone and run the installer.
@@ -51,7 +29,7 @@ restart hyprland to apply.
 
 **aur**
 - `hyprpaper`, `matugen-git`, `spicetify-cli`
-- `grub-minecraft-theme-git` - Pochita Minecraft GRUB theme
+- `minegrub-world-selection-theme` - minecraft grub theme
 
 ## features
 
@@ -243,25 +221,10 @@ installer backs up to `~/dotfiles-backup-YYYYMMDD-HHMMSS/`.
 author: microck.
 license: free to use.
 
-## Credits
+## credits
 
-This dotfiles setup incorporates configurations and scripts from several excellent open-source projects:
-
-### Core Inspiration & Components
-- **[xZepyx/hyprzepyx](https://github.com/xZepyx/hyprzepyx)** - Hyprland animations, window rules, swaync themes, and system maintenance scripts
-- **[elrondforwin/hyprdots](https://github.com/elrondforwin/hyprdots)** - GTK themes, Yazi file manager, Waypaper wallpaper manager, and enhanced window rules
-
-### Scripts & Utilities
-- **HyprZepyx Scripts** - `sysmaintenance.sh`, `thumbgen.sh`, `wallpaper-rofi`
-- **Hyprdots Configs** - Additional window rules and configuration structure
-
-### Themes & Styling
-- **[Pochita GRUB Theme](https://aur.archlinux.org/packages/grub-minecraft-theme-git)** - Minecraft singleplayer world selection screen theme
-- **[adw-gtk3](https://github.com/lassekongo83/adw-gtk3)** - Modern GTK theme for GNOME applications
-
-### Documentation & Community
-- **[Hyprland Wiki](https://wiki.hyprland.org/)** - Comprehensive documentation and examples
-- **[Arch Linux Wiki](https://wiki.archlinux.org/)** - System configuration guidance
-- **[GitHub Community](https://github.com/)** - Countless contributors to included tools and configurations
-
-A huge thank you to all maintainers and contributors who make these projects possible! This setup stands on the shoulders of giants.
+inspired by:
+- xzepyx/hyprzepyx (animations, swaync themes, scripts)
+- elrondforwin/hyprdots (gtk themes, yazi, window rules)
+- lxtharia/minegrub-world-sel-theme (minecraft grub theme)
+- arch & hyprland communities

@@ -1,16 +1,17 @@
 # GRUB Bootloader Configuration
 
-Arch Linux with Minecraft-themed GRUB bootloader (Pochita theme).
+Arch Linux with Minecraft-themed GRUB bootloader.
 
 ## Overview
 
-This configuration uses GRUB2 as the bootloader with a Minecraft singleplayer world selection screen theme called "Pochita".
+This configuration uses GRUB2 as the bootloader with a Minecraft singleplayer world selection screen theme.
 
 ## Theme Details
 
-**Theme Name**: Pochita (Minecraft-style)
-**Location**: `/usr/share/grub/themes/Pochita/`
-**Package**: `grub-minecraft-theme-git` (AUR)
+**Theme Name**: minegrub-world-selection
+**Location**: `/usr/share/grub/themes/minegrub-world-selection/`
+**Source**: [Lxtharia/minegrub-world-sel-theme](https://github.com/Lxtharia/minegrub-world-sel-theme)
+**Package**: `minegrub-world-selection-theme` (AUR)
 
 ### Theme Components
 
@@ -73,11 +74,12 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 ## Theme Installation
 
-The Pochita theme is installed from AUR:
+The world selection theme is installed from AUR:
 
 ```bash
 # If theme needs to be reinstalled
-yay -S grub-minecraft-theme-git
+yay -S minegrub-world-selection-theme
+```
 ```
 
 ## Location
