@@ -136,8 +136,8 @@ scripts in `~/.config/microck/`
 - `super + shift + return`: floating terminal
 - `super + e`: file manager (thunar)
 - `super + shift + e`: terminal file manager (yazi, with transparency)
-- `super + d`: app launcher (rofi)
-- `super + f`: app launcher (rofi)
+- `super + d`: app launcher (wofi)
+- `super + f`: run dialog (wofi)
 - `super + b`: open browser
 - `super + l`: lock screen
 - `super + r`: restart waybar
